@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap');
+
+.header-color{
+    background-color: blanchedalmond;
+}
+
+.button-header{
+    display: flex;
+    align-items: center;
+    border-color: gray;
+    color: gray!important;
+}
+
+.button-header:hover > svg > .svg-icon {
+    color: white!important;
+}
+
+.button-header:hover{
+    color: white!important;
+    background-color: burlywood;
+    border-color: white;
+}
+
+.nav {
+    --bs-nav-link-color: gray;
+}
+
+.nav-link:hover {
+    color: white!important;
+}
+
+.button-header > svg {
+    margin-left: 10px;
+} 
+
+.font-style{
+    font-family: "Tangerine", cursive;
+    font-size: 4rem;
+}
+
+.card-cover{
+    background-size: cover;
+    font-size: 1.25rem;
+}
+
+.text-font{
+    font-size: 2rem;
+    color: white!important;
+    text-shadow: 0px 0px 5px black;
+}
+
+.card-cover > div > h3 {
+    transition: all 0.5s ease-out;
+}
+
+.card-cover:hover > div > h3{
+    color: darksalmon!important;
+}
+
+.iframe-cel {
+    width: 100%;
+}
+
+.bg-body-form{
+    background-color: rgba(255, 228, 196, 0.452);
+}
+
+.text-contato{
+    text-align: center;
+    font-family: "Tangerine", cursive;
+    font-size: 3rem;
+}
+
+.botao-form{
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: coral;
+    color: white;
+    font-size: 1.25rem;
+    transition: all 0.5s ease-out;
+}
+
+.botao-form:hover{
+    background-color: rgb(248, 67, 1);
+}
+
+.whats{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 999;
+}
+
+@media screen and (max-width: 575px){
+    .col{
+        height: 250px;
+    }
+}
