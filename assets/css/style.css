@@ -1,14 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap');
 
+:root{
+    --color-header: blanchedalmond;
+    --text-color: gray;
+    --botao-hover: rgb(248, 67, 1);
+    --botao-bg: coral;
+}
+
 .header-color{
-    background-color: blanchedalmond;
+    background-color: var(--color-header);
+}
+
+.logotipo{
+    width: 200px;
+    filter: drop-shadow(0 0 0.75rem rgb(77, 76, 76));
 }
 
 .button-header{
     display: flex;
     align-items: center;
-    border-color: gray;
-    color: gray!important;
+    border-color: var(--text-color);
+    color: var(--text-color)!important;
 }
 
 .button-header:hover > svg > .svg-icon {
@@ -17,7 +29,7 @@
 
 .button-header:hover{
     color: white!important;
-    background-color: burlywood;
+    background-color: var(--botao-bg);
     border-color: white;
 }
 
@@ -54,7 +66,17 @@
 }
 
 .card-cover:hover > div > h3{
-    color: darksalmon!important;
+    color: var(--botao-bg)!important;
+}
+
+.carousel{
+    width: 60%;
+    margin: 0 auto;
+    margin-top: var(--bs-gutter-y);
+}
+
+.altura-carrouseul{
+    margin: 0 auto;
 }
 
 .iframe-cel {
@@ -75,15 +97,26 @@
     padding: 10px;
     border: none;
     border-radius: 5px;
-    background-color: coral;
+    background-color: var(--botao-bg);
     color: white;
     font-size: 1.25rem;
     transition: all 0.5s ease-out;
 }
 
 .botao-form:hover{
-    background-color: rgb(248, 67, 1);
+    background-color: var(--botao-hover);
 }
+
+.space{
+    justify-content: space-evenly;
+}
+
+.footer-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 
 .whats{
     position: fixed;
@@ -92,8 +125,30 @@
     z-index: 999;
 }
 
+
 @media screen and (max-width: 575px){
-    .col{
-        height: 250px;
+    .cel-col{
+        height: 150px;
     }
+
+    .carousel{
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    .altura-carrouseul{
+        width: 100%;
+    }
+
+    .nav{
+        display: block;
+        text-align: center;
+    }
+
+    .row{
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+
+
 }
