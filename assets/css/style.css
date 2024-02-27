@@ -1,34 +1,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap');
 
-:root{
+:root {
     --color-header: blanchedalmond;
     --text-color: gray;
     --botao-hover: rgb(248, 67, 1);
     --botao-bg: coral;
 }
 
-.header-color{
+.header-color {
     background-color: var(--color-header);
 }
 
-.logotipo{
+.logotipo {
     width: 200px;
     filter: drop-shadow(0 0 0.75rem rgb(77, 76, 76));
 }
 
-.button-header{
+.button-header {
     display: flex;
     align-items: center;
     border-color: var(--text-color);
-    color: var(--text-color)!important;
+    color: var(--text-color) !important;
 }
 
-.button-header:hover > svg > .svg-icon {
-    color: white!important;
+.button-header:hover>svg>.svg-icon {
+    color: white !important;
 }
 
-.button-header:hover{
-    color: white!important;
+.button-header:hover {
+    color: white !important;
     background-color: var(--botao-bg);
     border-color: white;
 }
@@ -38,54 +38,69 @@
 }
 
 .nav-link:hover {
-    color: white!important;
+    color: white !important;
 }
 
-.button-header > svg {
+.button-header>svg {
     margin-left: 10px;
-} 
+}
 
-.font-style{
+.font-style {
     font-family: "Tangerine", cursive;
     font-size: 4rem;
 }
 
-.row > .div-img {
+.row>.div-img {
     margin-top: 0px;
 }
 
-.img-maria{
-    width: 100%;
+.height-div {
     max-height: 80vh;
-    filter:drop-shadow(20px 20px 15px blanchedalmond);
 }
 
-.card-cover{
+.mleft {
+    margin-left: 15vh;
+}
+
+.flex-text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.img-maria {
+    max-height: 70vh;
+    filter: drop-shadow(20px 20px 15px blanchedalmond);
+    overflow: hidden;
+}
+
+.card-cover {
     background-size: cover;
     font-size: 1.25rem;
 }
 
-.text-font{
+.text-font {
     font-size: 2rem;
-    color: white!important;
+    color: white !important;
     text-shadow: 0px 0px 5px black;
 }
 
-.card-cover > div > h3 {
+.card-cover>div>h3 {
     transition: all 0.5s ease-out;
 }
 
-.card-cover:hover > div > h3{
-    color: var(--botao-bg)!important;
+.card-cover:hover>div>h3 {
+    color: var(--botao-bg) !important;
 }
 
-.carousel{
+.carousel {
     width: 60%;
     margin: 0 auto;
     margin-top: var(--bs-gutter-y);
 }
 
-.altura-carrouseul{
+.altura-carrouseul {
     margin: 0 auto;
 }
 
@@ -93,17 +108,17 @@
     width: 100%;
 }
 
-.bg-body-form{
+.bg-body-form {
     background-color: rgba(255, 228, 196, 0.452);
 }
 
-.text-contato{
+.text-contato {
     text-align: center;
     font-family: "Tangerine", cursive;
     font-size: 3rem;
 }
 
-.botao-form{
+.botao-form {
     padding: 10px;
     border: none;
     border-radius: 5px;
@@ -113,68 +128,91 @@
     transition: all 0.5s ease-out;
 }
 
-.botao-form:hover{
+.botao-form:hover {
     background-color: var(--botao-hover);
 }
 
-.space{
+.space {
     justify-content: space-evenly;
     margin-right: 0px;
     margin-left: 0px;
 }
 
-.footer-logo{
+.footer-logo {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
 
-.bi-instagram{
+.bi-instagram {
     color: var(--botao-bg);
 }
 
 
-.whats{
+.whats {
     position: fixed;
     bottom: 30px;
     right: 30px;
     z-index: 999;
 }
 
-.scrollreveal{
+.scrollreveal {
     visibility: hidden;
 }
 
 
-@media screen and (max-width: 575px){
-    .cel-col{
+@media screen and (max-width: 775px) {
+    .cel-col {
         height: 150px;
     }
 
-    .flex-direction{
+    .flex-direction {
         flex-direction: column-reverse;
     }
 
-    .img-maria{
-        width: 80vw;
+    .mleft {
+        margin: 30px 10px;
+        width: 90%;
     }
 
-    .carousel{
+    .lead{
+        font-size: 15px;
+        text-align: right;
+    }
+
+    .height-div {
+        align-items: center;
+        margin: 50px 0;
+        height: auto;
+    }
+
+    .img-div-maria {
+        width: 30%;
+        justify-content: flex-start;
+        overflow: hidden;
+    }
+
+    .img-maria {
+        object-fit: cover;
+        object-position: 20% 10%; /* try 20px 10px */ 
+    }
+
+    .carousel {
         width: 100%;
         margin-top: 2rem;
     }
 
-    .altura-carrouseul{
+    .altura-carrouseul {
         width: 100%;
     }
 
-    .nav{
+    .nav {
         display: block;
         text-align: center;
     }
 
-    .row{
+    .row {
         margin-right: 0px;
         margin-left: 0px;
     }
