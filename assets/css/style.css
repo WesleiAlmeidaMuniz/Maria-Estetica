@@ -193,11 +193,6 @@
         overflow: hidden;
     }
 
-    .img-maria {
-        object-fit: cover;
-        object-position: 20% 10%; /* try 20px 10px */ 
-    }
-
     .carousel {
         width: 100%;
         margin-top: 2rem;
