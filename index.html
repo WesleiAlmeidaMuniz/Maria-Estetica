@@ -9,6 +9,8 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="shortcut icon" href="assets/img/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 
 <body>
@@ -44,18 +46,24 @@
             </div>
         </header>
     </div>
-    <div id="sobremin" class="px-4 py-5 my-2 text-center">
-        <h1 class="display-5 fw-bold">Centro Estetica </h1>
-        <div class="col-lg-6 mx-auto">
-            <p class="lead">Visite nosso centro de estética para uma experiência de beleza e bem-estar incomparável.
-                Nossos tratamentos rejuvenescedores e terapias relaxantes são cuidadosamente projetados para realçar sua
-                beleza natural. Desfrute de um ambiente tranquilo e luxuoso, onde cada cliente é mimado e saia
-                sentindo-se revigorado e radiante. Agende sua consulta hoje mesmo e descubra o seu melhor eu conosco!
-            </p>
+    <div id="sobremin" class="container col-xxl-8 px-4">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5 flex-direction">
+            <div class="col-sm-8 col-lg-6 div-img scrollreveal">
+                <img src="assets/img/Maria3.png" class="d-block mx-lg-auto img-maria" alt="Maria CEO" loading="lazy">
+            </div>
+            <div class="col-lg-6 scrollreveal">
+                <h1 class="display-5 fw-bold">Centro Estetica </h1>
+                <p class="lead">Visite nosso centro de estética para uma experiência de beleza e bem-estar incomparável.
+                    Nossos tratamentos rejuvenescedores e terapias relaxantes são cuidadosamente projetados para realçar
+                    sua
+                    beleza natural. Desfrute de um ambiente tranquilo e luxuoso, onde cada cliente é mimado e saia
+                    sentindo-se revigorado e radiante. Agende sua consulta hoje mesmo e descubra o seu melhor eu
+                    conosco!</p>
+                <a href="#">Saiba mais...</a>
+            </div>
         </div>
-        <a href="#">Saiba mais...</a>
     </div>
-    <div class="container px-4 py-5" id="serviços">
+    <div class="container px-4 py-5 scrollreveal" id="serviços">
         <h2 class="pb-2 border-bottom font-style">Serviços</h2>
 
         <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
@@ -147,16 +155,18 @@
                 </a>
             </div>
             <div class="col">
-                <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-                    style="background-image: url('assets/img/Tratamento-Redução-Medidas.jpg');">
-                    <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-                        <h3 class="pt-5 mt-5 mb-4 text-font lh-1 fw-bold">Redução de medidas</h3>
+                <a href="reducao.html" style="text-decoration: none;">
+                    <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                        style="background-image: url('assets/img/Tratamento-Redução-Medidas.jpg');">
+                        <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                            <h3 class="pt-5 mt-5 mb-4 text-font lh-1 fw-bold">Redução de medidas</h3>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
         </div>
     </div>
-    <div id="depoimentos" class="container col-xl-10 col-xxl-8 px-4 py-5">
+    <div id="depoimentos" class="container col-xl-10 col-xxl-8 px-4 py-5 scrollreveal">
         <div class="row align-items-center g-lg-5 py-5">
             <h1 class="display-4 fw-bold lh-1 text-body-emphasis font-style border-bottom">
                 Depoimentos
@@ -192,7 +202,7 @@
             </div>
         </div>
     </div>
-    <div id="contato" class="container col-xl-10 col-xxl-8 px-4 py-5">
+    <div id="contato" class="container col-xl-10 col-xxl-8 px-4 py-5 scrollreveal">
         <div class="row align-items-center g-lg-5 py-5">
             <h1 class="display-4 fw-bold lh-1 text-body-emphasis font-style border-bottom">Contato</h1>
             <div class="col-lg-7 text-center text-lg-start">
@@ -257,7 +267,7 @@
         </footer>
     </div>
 
-    <div class="whats">
+    <div class="whats animate__animated animate__headShake animate__slower animate__delay-3s animate__infinite">
         <a href="https://wa.me/5511946101374?text=Olá Maria Silva, tudo bem? gostaria de um orçamento, por favor."
             target="_blank">
             <img src="assets/img/whatslaranja.png" width="50" alt="Fale Conosco pelo Whatsapp"
@@ -267,7 +277,9 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous">
+    </script>
+    <script src="main.js"></script>
 </body>
 
 </html>
