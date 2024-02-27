@@ -7,6 +7,12 @@
     --botao-bg: coral;
 }
 
+body{
+    overflow-y: scroll;
+    overflow-x: hidden; 
+    -webkit-overflow-scrolling: touch;
+}
+
 .header-color {
     background-color: var(--color-header);
 }
